@@ -8,7 +8,8 @@ module.exports = {
       },
 
       fontFamily: {
-        body: ['Nunito']
+        body: ['Nunito'],
+        jakarta: ['Plus Jakarta Sans']
       }
 
     },
