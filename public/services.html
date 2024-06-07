@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior:smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sian Phipps - CPA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-garamond bg-gray-200">
+
+    <div> <!--EVERYTHING-->
+    <div class="sticky top-0 z-30"> <!--NAVIGATION-->
+        <nav class="flex justify-between items-center bg-blue-900 shadow-xl w-full">
+                <div>
+                <h1 class="text-white ml-4 pl-2 mt-2 pt-1 font-semibold text-2xl md:text-3xl hover:text-blue-400 transition hover:ease-linear">
+                    <a href="/">Sian Phipps</a>
+                </h1>
+                <h2 class="text-white font-semibold text-lg sm:textxl opacity-70 ml-4 pl-2 mb-2 pb-1 italic">
+                    CPA
+                </h2>
+                </div>
+                <div class="text-white font-medium text-base mr-6 hidden md:block md:text-2xl" id="menu"> <!--Other buttons-->
+                    <a href="/" class="mx-2 md:mx-6 hover:text-blue-400 transition hover:ease-linear pb-2">
+                        <span>About</span>
+                    </a>
+                    <a href="services.html" class="mx-2 md:mx-6 hover:text-blue-400 transition hover:ease-linear pb-2">
+                        <span>Services</span>
+                    </a>
+                    <a href="contact.html" class="mx-2 md:mx-6 hover:text-blue-400 transition hover:ease-linear pb-2">
+                        <span>Contact</span>
+                    </a>
+                </div>
+
+                <div class="cursor-pointer md:hidden relative grid justify-items-center" id="burger"> <!--Burger Menu-->
+                    <div class="bg-white absolute rounded-full w-12 border-4 -translate-x-12 -translate-y-[2px] border-white before:bg-white before:content-[''] before:border-white before:w-12 before:border-4 before:rounded-full before:absolute before:translate-y-[14px] before:-translate-x-1 after:content-[''] after:border-white after:bg-white after:w-12 after:border-4 after:rounded-full after:absolute after:-translate-y-[22px] after:-translate-x-1 transition-all duration-150 before:transition-all before:duration-300 after:transition-all after:duration-300"></div>
+                </div>
+                <section id="mobile-menu" class="absolute top-20 bg-black w-full text-4xl flex flex-col origin-top md:hidden opacity-0">
+                    <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                        <a href="/" class="w-full text-center py-6 hover:opacity-90 text-white">About</a>
+                        <a href="services.html" class="w-full text-center py-6 hover:opacity-90 text-white">Services</a>
+                        <a href="contact.html" class="w-full text-center py-6 hover:opacity-90 text-white">Contact</a>  
+                    </nav>
+                </section>
+        </nav>
+    </div> <!--END NAVIGATION-->
+
+    <main class="bg-gray-200 font-roboto">
+
+
+
+            <!--About Section-->
+            <div class="flex flex-col md:flex-row items-center justify-evenly px-8 py-8 md:px-36 md:py-20 bg-[url('img/ardmore1.jpg')] bg-fixed bg-cover relative">
+                
+                
+                <div class="flex flex-col md:ml-16 rounded-lg z-20 items-center">
+                    <span class="font-bold text-4xl md:text-8xl mb-4 text-blue-500 font-garamond">Services</span>
+                    <p class="md:text-xl text-white font-medium">Sian Phipps has a wide array of expertise </p>
+                </div>
+                <div class="bg-black absolute top-0 h-full w-full bg-opacity-70 z-0"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-10 mx-16 my-16">
+                <!--Cards go here-->
+                <div class="card">
+                    <img src="img/corporate1.jpg" alt="Hi!" class="w-full h-64 md:h-80 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold">Insight</span>
+                        <span class="block text-gray-500 text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos harum in laboriosam molestiae iusto provident omnis voluptates asperiores consectetur incidunt, mollitia ab at inventore! Non neque veniam nemo provident eum.</span>
+                    </div>
+                    <div class="badge">
+                        <span>25 mins</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/sian1.jpg" alt="Sian!" class="w-full h-64 md:h-80 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold">About</span>
+                        <span class="block text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae vitae distinctio dolor. Nulla laudantium, ipsum accusamus fuga ratione quidem provident laboriosam obcaecati tenetur. Illum nam atque quasi facere voluptatem sed.</span>
+                    </div>
+                    <div class="badge">
+                        <span>25 mins</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/corporate2.jpg" alt="Hi!" class="w-full h-64 md:h-80 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold">Services</span>
+                        <span class="block text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora numquam totam, laudantium non est hic officia excepturi temporibus nesciunt vitae ipsam aliquam? Eius, ipsam hic facere quod ratione quae ut.</span>
+                    </div>
+                    <div class="badge">
+                        <span>25 mins</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--FOOTER-->
+            <div class="bg-blue-900 py-8 md:py-8 grid grid-cols-2 justify-items-center items-center font-garamond">
+                
+                <div class="">
+                <a href="contact.html" class="btn border-blue-400 border-4 hover:bg-blue-400 hover:text-black transition hover:ease-linear font-roboto">Contact</a>
+                </div>
+            <div class="flex flex-col">
+                <span class="text-white font-extrabold my-4 text-xl md:text-3xl">Contact Info</span>
+                <span class="text-white md:text-lg">Email Me:</span>
+                <a href="" class="text-white font-extrabold mb-4 text-xs md:text-2xl">sianphippscpa@gmail.com</a>
+                <span class="text-white md:text-lg">Call Me:</span>
+                <a href="" class="text-white font-extrabold mb-4 md:text-2xl">(580) 247-5761</a>
+            </div>
+            </div>
+            
+        </main>
+    </div>
+
+    <script src="index.js" defer></script>
+    
+</body>
+</html>
