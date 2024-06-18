@@ -15,13 +15,17 @@ module.exports = {
       },
       keyframes: {
         'open-menu': {
-          '0%': {transform: 'scaleY(0)'},
-          '100%': {transform: 'scaleY(1)'},
+          '0%': {transform: 'translateY(-20px)', opacity:'0'},
+          '100%': {transform: 'translateY(0px)', opacity:'100'}
         },
+        'open-menu-icons': {
+          '0%': {transform: 'translateY(40px)', opacity:'0'},
+          '100%': {transform: 'translateY(0px)', opacity:'100'}
+        }
       },
       animation: {
-        'open-menu': 'open-menu 0.4s ease-out forwards',
-        'close-menu': 'open-menu 0.4s ease-out reverse'
+        'open-menu': 'open-menu 0.5s ease-out',
+        'open-menu-icons': 'open-menu-icons 0.5s ease-in-out'
       }
     },
   },
