@@ -4,9 +4,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/*
-! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
-*/
+/*Import custom fonts*/
+
+/*! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com*/
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -560,6 +560,10 @@ video {
   --tw-contain-style:  ;
 }
 
+.pointer-events-none{
+  pointer-events: none;
+}
+
 .absolute{
   position: absolute;
 }
@@ -614,6 +618,11 @@ video {
   margin-right: 0.5rem;
 }
 
+.mx-72{
+  margin-left: 18rem;
+  margin-right: 18rem;
+}
+
 .my-16{
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -622,6 +631,10 @@ video {
 .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.mb-12{
+  margin-bottom: 3rem;
 }
 
 .mb-2{
@@ -650,18 +663,6 @@ video {
 
 .mt-40{
   margin-top: 10rem;
-}
-
-.mt-60{
-  margin-top: 15rem;
-}
-
-.mt-80{
-  margin-top: 20rem;
-}
-
-.mt-96{
-  margin-top: 24rem;
 }
 
 .block{
@@ -700,12 +701,24 @@ video {
   width: 100%;
 }
 
-.w-10{
-  width: 2.5rem;
-}
-
 .origin-top{
   transform-origin: top;
+}
+
+@keyframes open-menu{
+  0%{
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateY(0px);
+    opacity: 100;
+  }
+}
+
+.animate-close-menu{
+  animation: open-menu 0.5s ease-out reverse;
 }
 
 @keyframes open-menu{
@@ -738,6 +751,38 @@ video {
 
 .animate-open-menu-icons{
   animation: open-menu-icons 0.5s ease-in-out;
+}
+
+@keyframes page-load-desc{
+  0%{
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateY(0px);
+    opacity: 100;
+  }
+}
+
+.animate-page-load-desc{
+  animation: page-load-desc 1.4s ease;
+}
+
+@keyframes page-load-title{
+  0%{
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateY(0px);
+    opacity: 100;
+  }
+}
+
+.animate-page-load-title{
+  animation: page-load-title 1.4s ease;
 }
 
 .cursor-pointer{
@@ -816,12 +861,12 @@ video {
   background-image: url('img/ardmore1.jpg');
 }
 
-.bg-\[url\(\'img\/turnerfalls1\.jpg\'\)\]{
-  background-image: url('img/turnerfalls1.jpg');
-}
-
 .bg-\[url\(\'img\/littleniagara1\.jpg\'\)\]{
   background-image: url('img/littleniagara1.jpg');
+}
+
+.bg-\[url\(\'img\/turnerfalls1\.jpg\'\)\]{
+  background-image: url('img/turnerfalls1.jpg');
 }
 
 .bg-cover{
@@ -835,6 +880,10 @@ video {
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.p-32{
+  padding: 8rem;
 }
 
 .px-8{
@@ -963,6 +1012,10 @@ video {
   opacity: 0;
 }
 
+.opacity-100{
+  opacity: 1;
+}
+
 .opacity-70{
   opacity: 0.7;
 }
@@ -980,6 +1033,8 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+
+/*Custom classes for long, reappliable styles*/
 
 .card{
   overflow: hidden;
@@ -1009,6 +1064,8 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+/* Contact Button */
+
 .btn{
   cursor: pointer;
   border-radius: 9999px;
@@ -1028,6 +1085,8 @@ video {
     line-height: 2.25rem;
   }
 }
+
+/* Hamburger itself */
 
 .hamburger{
   position: absolute;
@@ -1164,6 +1223,11 @@ video {
   .md\:px-36{
     padding-left: 9rem;
     padding-right: 9rem;
+  }
+
+  .md\:py-16{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .md\:py-20{
